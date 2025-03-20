@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Coding Atelier</title>
+    <style>
+        /* Global box-sizing for consistent dimensions */
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #fdeef4; /* Soft light pink */
+          color: #4d004d; /* Rich muted plum for text */
+        }
+
+        nav {
+          background-color: #e75480; /* Hot pink */
+          padding: 10px;
+          text-align: center;
+          position: sticky; /* Sticks to the top on scroll */
+          top: 0;
+          z-index: 1000;
+        }
+
+        nav a {
+          color: #ffffff; /* White text for nav links */
+          text-decoration: none;
+          margin: 0 15px;
+          font-size: 1.2em;
+          transition: color 0.3s; /* Hover effect */
+        }
+
+        nav a:hover {
+          color: #ffe6ed; /* Lighter pink hover effect */
+        }
+
+        header {
+          text-align: center;
+          padding: 50px 20px;
+        }
+
+        header h1 {
+          margin: 0;
+          font-size: 2.5em;
+          color: #e75480; /* Hot pink */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+        }
+
+        .contact-form {
+          max-width: 600px;
+          margin: 30px auto;
+          background-color: #ffffff; /* White background for form */
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+          color: #c4005a; /* Rich dark pink */
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 1.8em;
+        }
+
+        .contact-form label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #4d004d;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 2px solid #e75480; /* Hot pink border */
+          border-radius: 5px;
+          font-size: 1em;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+          outline: none;
+          border-color: #c4005a; /* Darker pink when focused */
+        }
+
+        .contact-form button {
+          background-color: #e75480; /* Hot pink button */
+          color: #ffffff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+          background-color: #c4005a; /* Darker pink on hover */
+        }
+
+        footer {
+          background-color: #e75480;
+          text-align: center;
+          color: #ffffff;
+          padding: 15px 0;
+          width: 100%;
+        }
+
+        footer p {
+          margin: 0;
+          font-size: 1em;
+        }
+
+        footer a {
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        footer a:hover {
+          color: #ffe6ed; /* Lighter pink hover effect */
+        }
+
+        .footer-icon img {
+          width: 25px;
+          height: 25px;
+          margin-left: 10px;
+          vertical-align: middle;
+        }
+    </style>
+    <script>
+        // Disable Ctrl+U to block viewing the source code
+        document.addEventListener('keydown', function(event) {
+          if (event.ctrlKey && event.key === 'u') {
+            event.preventDefault();
+            alert('Viewing source code is disabled!');
+          }
+        });
+    </script>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="AboutMe.html">About Faaezah</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+<header>
+    <h1>Contact</h1>
+</header>
+
+<div class="contact-form">
+    <h2>We'd Love to Hear From You!</h2>
+    <form action="https://formspree.io/f/movejgng" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 The Coding Atelier by Faaezah. All rights reserved.</p>
+    <div class="footer-icon">
+        <a href="https://www.youtube.com/@TheCodingAtelierbyFaaezah" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            Follow on YouTube
+        </a>
+    </div>
+</footer>
+</body>
+</html>

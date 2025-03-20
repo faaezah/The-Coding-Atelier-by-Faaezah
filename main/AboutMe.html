@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Faaezah - The Coding Atelier</title>
+  <style>
+    /* Global box-sizing for consistent dimensions */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdeef4; /* Soft light pink */
+      color: #4d004d; /* Rich muted plum for text */
+    }
+
+    nav {
+      background-color: #e75480; /* Hot pink */
+      padding: 10px;
+      text-align: center;
+      position: sticky; /* Sticks to the top on scroll */
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #ffffff; /* White text for nav links */
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+      transition: color 0.3s; /* Hover effect */
+    }
+
+    nav a:hover {
+      color: #ffe6ed; /* Lighter pink hover effect */
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #e75480; /* Hot pink */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    }
+
+    .image-box {
+      max-width: 300px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%; /* Circle image effect */
+      border: 4px solid #e75480; /* Hot pink border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+    .box {
+      background-color: #ffedf4; /* Soft light pink for boxes */
+      border: 2px solid #e75480; /* Hot pink border */
+      border-radius: 10px;
+      padding: 15px 20px; /* Balanced padding */
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 500px; /* Responsive width */
+      line-height: 1.5;
+      transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+    }
+
+    .box:hover {
+      transform: scale(1.02); /* Slight enlargement on hover */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    }
+
+    .box h2 {
+      color: #c4005a; /* Rich dark pink */
+      font-size: 1.4em; /* Heading size */
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      color: #4d004d; /* Plum text color */
+      font-size: 1.2em;
+    }
+
+    footer {
+      background-color: #e75480;
+      text-align: center;
+      color: #ffffff;
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ffe6ed; /* Lighter pink hover effect */
+    }
+
+    .footer-icon img {
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  </style>
+  <script>
+    // Disable Ctrl+U to block viewing the source code
+    document.addEventListener('keydown', function(event) {
+      if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+        alert('Viewing source code is disabled!');
+      }
+    });
+  </script>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="AboutMe.html">About Faaezah</a>
+  <a href="Contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>About Faaezah</h1>
+</header>
+
+<div class="image-box">
+  <img src="Faaezah.png" alt="A photo of Faaezah">
+</div>
+
+<div class="box">
+  <h2>A Journey of Passion and Creativity</h2>
+  <p>
+    Faaezah is a passionate creator who envisioned a world where coding is accessible and fun for everyone.
+    From her early days experimenting with lines of code to founding "The Coding Atelier," she has been on
+    a mission to break barriers and inspire individuals to transform ideas into reality through technology.
+  </p>
+</div>
+
+<div class="box">
+  <h2>A Vision to Give Back</h2>
+  <p>
+    Beyond her technical pursuits, Faaezah is dedicated to making a difference. Her YouTube channel not only
+    educates and inspires a global audience but also contributes revenue to charities like the Code for India
+    Foundation and Digital Philippines. Through her work, she empowers underprivileged communities and champions
+    coding literacy worldwide.
+  </p>
+</div>
+
+<div class="box">
+  <h2>Join the Journey</h2>
+  <p>
+    Become a part of this incredible journey by exploring "The Coding Atelier" and supporting the mission
+    to make coding a universal language. Together, we can inspire creativity, innovation, and positive change.
+  </p>
+</div>
+
+<footer>
+  <p>&copy; 2025 The Coding Atelier by Faaezah. All rights reserved.</p>
+  <div class="footer-icon">
+    <a href="https://www.youtube.com/@TheCodingAtelierbyFaaezah" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+      Follow on YouTube
+    </a>
+  </div>
+</footer>
+</body>
+</html>

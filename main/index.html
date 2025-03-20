@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coding Atelier by Faaezah</title>
+  <style>
+    /* Global box-sizing fix for consistent dimensions */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdeef4; /* Soft light pink */
+      color: #4d004d; /* Rich muted plum for text */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure footer is pushed to the bottom */
+    }
+
+    header {
+      background-color: #e75480; /* Moderated hot pink for the header */
+      padding: 30px;
+      text-align: center;
+      width: 100%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffffff; /* White text for contrast */
+    }
+
+    nav {
+      background-color: #e75480; /* Hot pink */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff; /* White nav text */
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe6ed; /* Lighter pink hover effect */
+    }
+
+    main {
+      flex: 1; /* Allow main content to stretch and push footer down */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .box {
+      background-color: #ffedf4; /* Soft light pink for boxes */
+      border: 2px solid #e75480; /* Hot pink border */
+      border-radius: 10px;
+      padding: 15px 20px; /* Balanced padding */
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+      max-width: 500px; /* Proportional width */
+      height: auto; /* Dynamic height */
+      line-height: 1.5; /* Optimized text spacing */
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .box:hover {
+      transform: scale(1.02); /* Subtle enlargement on hover */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced depth */
+    }
+
+    footer {
+      background-color: #e75480;
+      text-align: center;
+      color: #ffffff;
+      padding: 15px 0;
+      width: 100%;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    footer a {
+      color: #ffffff; /* White text for links */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ffe6ed; /* Lighter pink hover */
+    }
+
+    .footer-icon img {
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  </style>
+  <script>
+    // Disable Ctrl+U to block viewing the source code
+    document.addEventListener('keydown', function(event) {
+      if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+        alert('Viewing source code is disabled!');
+      }
+    });
+  </script>
+</head>
+<body>
+<header>
+  <h1>Welcome to The Coding Atelier</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="AboutMe.html">About Faaezah</a>
+  <a href="Contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="box">
+    <h2>About The Coding Atelier</h2>
+    <p>
+      The Coding Atelier was born from the vision of a passionate teenage girl who sought to revolutionize lives through the power of coding. Faaezah, its founder, was driven by a desire to challenge the narrative that "coding is difficult" or "coding is hard." She dreamed of making coding more accessible to everyone, empowering individuals to shine and thrive in the digital era. This vision sparked the creation of The Coding Atelier, a place where technology meets creativity. Beyond this mission, Faaezah runs an official YouTube channel, sharing knowledge and inspiration with a global audience. She has ambitious plans to donate the channel's revenue to impactful charities like the Code for India Foundation and Digital Philippines, focusing on communities with some of the lowest coding literacy rates. Join Faaezah on this incredible journey. By simply visiting her channel, you can help support her mission to spread coding education and empower lives worldwide. The Coding Atelier wouldn’t be what it is today without the unwavering support of its community—without you.
+    </p>
+  </div>
+  <div class="box">
+    <h2>Mission Statement</h2>
+    <p>
+      At The Coding Atelier, we empower creators of every kind to transform ideas into reality through the artistry of code.
+      By breaking barriers and sparking innovation, we inspire individuals to shine, thrive, and lead in the ever-evolving
+      digital world.
+    </p>
+  </div>
+  <div class="box image-box">
+    <img src="../FThecodingatelier.png" alt="The Coding Atelier">
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 The Coding Atelier by Faaezah. All rights reserved.</p>
+  <div class="footer-icon">
+    <a href="https://www.youtube.com/@TheCodingAtelierbyFaaezah" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+      Follow on YouTube
+    </a>
+  </div>
+</footer>
+</body>
+</html>
